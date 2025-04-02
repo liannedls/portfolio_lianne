@@ -83,7 +83,7 @@ selection = st.sidebar.radio("", pages)
 
 # Home Page
 if selection == "Home":
-    st.markdown('<h1 class="title">Hi:wave: </h1>', unsafe_allow_html=True)
+    st.markdown('<h1 class="title">Hi 👋 </h1>', unsafe_allow_html=True)
     st.markdown("""
     <div style="text-align: center;">
         <p>Hello, I'm <b>Liannee</b>, a software developer with experience in building modern scalable software applications.</p>
