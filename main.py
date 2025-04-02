@@ -146,7 +146,7 @@ elif selection == "Skills":
     - Python, JavaScript, HTML, CSS, Matlab, Bash  
     
     **Web Development & Frameworks**:  
-    - Django, Tomcat  
+    - Django, Tomcat, apache  
     
     **Databases**:  
     - PostgreSQL, MySQL, Redis  
@@ -165,9 +165,15 @@ elif selection == "Skills":
     
     **Computer Vision & Data Processing**:  
     - OpenCV  
+
+    **Machine Learning**:  
+    - Machine learning libraries (Scikit-learn, TensorFlow) and concepts
     
     **Networking & Cybersecurity**:  
     - Wireshark, Prometheus, Networking, Cybersecurity  
+
+    **Other**:  
+    - Jupyter 
 
     """)
 
