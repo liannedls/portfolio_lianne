@@ -78,9 +78,8 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Sidebar for navigation
-st.sidebar.title("Navigation")
 pages = ["Home", "About Me", "Education & Courses", "Skills", "Projects", "Contact"]
-selection = st.sidebar.radio("Go to", pages)
+selection = st.sidebar.radio("", pages)
 
 # Home Page
 if selection == "Home":
@@ -114,9 +113,9 @@ elif selection == "Education & Courses":
     - [Add any other degrees or diplomas here]
     """)
 
-    st.header("📚 Online Courses & Certifications")
+    st.header("📚 Courses & Certifications")
     st.markdown("""
-    - **Full-Stack Web Development** - [Platform Name] (e.g., Coursera, Udemy)
+    - **Royal Military College Malware Analysis Short Course (MASC)**
     - **Machine Learning Basics** - [Platform Name]
     - **Cloud Computing with AWS** - [Platform Name]
     - [Add any other relevant certifications]
