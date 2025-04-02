@@ -3,32 +3,32 @@ import streamlit as st
 # Set page configuration
 st.set_page_config(page_title="Lianne de la Salle - Software Developer", page_icon=":computer:", layout="wide")
 
-# Inject Custom CSS for a Soft Color Palette
+# Inject Custom CSS for the Soft Pastel Color Palette
 st.markdown("""
     <style>
         /* Set background color */
         body {
-            background-color: #F8F3ED !important; /* Soft beige */
+            background-color: #BDDDE4 !important; /* Soft muted pink */
         }
 
         /* Customize the sidebar */
         [data-testid="stSidebar"] {
-            background-color: #E3DAC9 !important; /* Light cream */
-            color: #4A4A4A !important;
+            background-color: #9EC6F3 !important; /* Light purple */
+            color: #333 !important;
         }
 
-        /* Change title font and color */
+        /* Title Styling */
         .title {
             font-size: 2.8rem !important;
-            color: #5A7D7C !important; /* Muted green */
+            color: #9FB3DF !important; /* Soft blue */
             font-weight: bold;
             text-align: center;
         }
 
         /* Style buttons */
         .stButton>button {
-            background-color: #A69C89 !important; /* Soft brown */
-            color: white !important;
+            background-color: #FFF1D5 !important; /* Soft beige */
+            color: #4A4A4A !important;
             font-size: 16px !important;
             border-radius: 8px !important;
             padding: 10px !important;
@@ -36,17 +36,17 @@ st.markdown("""
         }
 
         .stButton>button:hover {
-            background-color: #8B7E74 !important; /* Slightly darker brown */
+            background-color: #F4E3C1 !important; /* Slightly darker beige */
         }
 
         /* Style headers */
         h1, h2, h3 {
-            color: #5A7D7C !important; /* Muted green */
+            color: #9FB3DF !important; /* Soft blue */
         }
 
         /* Contact Form Styling */
         .contact-box {
-            background: #E3DAC9;
+            background: #FFF1D5;
             padding: 20px;
             border-radius: 12px;
             box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
@@ -55,7 +55,7 @@ st.markdown("""
         }
 
         .contact-box h3 {
-            color: #5A7D7C;
+            color: #9FB3DF;
             text-align: center;
         }
 
@@ -136,8 +136,6 @@ elif selection == "Projects":
     **Technologies Used**: React, Node.js, Express, MongoDB  
     **Link**: [GitHub Link](https://github.com/yourusername/e-commerce-app)
     """)
-    
-    # Add more projects as needed...
 
 # Contact Page
 elif selection == "Contact":
