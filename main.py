@@ -83,11 +83,11 @@ selection = st.sidebar.radio("", pages)
 
 # Home Page
 if selection == "Home":
-    st.markdown('<h1 class="title">Welcome to My Portfolio!</h1>', unsafe_allow_html=True)
+    st.markdown('<h1 class="title">Hi:wave: </h1>', unsafe_allow_html=True)
     st.markdown("""
     <div style="text-align: center;">
-        <p>Hello, I'm <b>Lianne de la Salle</b>, a passionate Software Developer with experience in building innovative and scalable software applications.</p>
-        <p>I'm excited to share my journey with you. Explore the sections below to know more about me, my skills, and my projects.</p>
+        <p>Hello, I'm <b>Liannee</b>, a software developer with experience in building modern scalable software applications.</p>
+        <p>Feel free to explore around to know more about me, my skills, and my projects.</p>
     </div>
     """, unsafe_allow_html=True)
 
@@ -96,11 +96,28 @@ elif selection == "About Me":
     st.title("About Me")
     st.markdown("""
     Hi! I'm **Lianne de la Salle**, a Software Developer with a background in Computer Science. 
-    I specialize in full-stack development and am passionate about building web applications that are both functional and user-friendly.
-    
-    **Experience**:
-    - Software Developer at [Company Name] (Dates)
-    - [Other relevant work experience or internships]
+    I specialize in full-stack development and am passionate about building web applications that are both functional and user-friendly.    
+**Experience**:  
+- **Programmer Analyst, Application Development** at [CRTC - Canadian Radio-television and Telecommunications Commission] (February 2021 – June 2021, March 2022 – Present)  
+  - Full-stack software developer for the CRTC’s internal Django web application, the **Spam Reporting Center**.  
+  - Meet with clients to define requirements and implement new features.  
+  - Troubleshoot and address production issues, debug source code, complete code reviews, and write automated tests.  
+  - Integrated machine learning and computer vision libraries to enhance the system.  
+  - Collaborate with external partners to resolve system-impacting issues.  
+
+- **Programmer Analyst, Application Development** at [ESDC - Employment and Social Development Canada] (July 2021 – February 2022)  
+  - Developed, maintained, and supported an **ArcGIS application** for ESDC intelligence clients.  
+  - Assisted with cloud migration and process automation.  
+
+- **Software and Hardware Engineer** at [CCX Technologies] (October 2018 – November 2019)  
+  - Worked in a **multifaceted role** involving software design and testing, schematic and PCB design, and product verification.  
+  - Contributed to the development of a **cybersecurity and networking web application** by:  
+    - Developing frontend features.  
+    - Creating and resolving bug reports.  
+    - Building a features database.  
+    - Developing functional test cases.  
+    - Automating processes.  
+
     """)
 
 # Education & Courses Page
