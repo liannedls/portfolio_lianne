@@ -50,6 +50,10 @@ st.markdown("""
             color: #432E54 !important; /* Dark Contrast */
         }
 
+        .st-av {
+            background-color: #E8BCB9 !important;
+        }
+
         /* Headers */
         h1, h2, h3 {
             color: #E8BCB9 !important; /* Teal Accent */
