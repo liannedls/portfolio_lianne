@@ -3,50 +3,62 @@ import streamlit as st
 # Set page configuration
 st.set_page_config(page_title="Lianne de la Salle - Software Developer", page_icon=":computer:", layout="wide")
 
-# Inject Custom CSS
+# Inject Custom CSS for a Soft Color Palette
 st.markdown("""
     <style>
+        /* Set background color */
+        body {
+            background-color: #F8F3ED !important; /* Soft beige */
+        }
+
         /* Customize the sidebar */
         [data-testid="stSidebar"] {
-            background-color: #2E3B4E !important;
-            color: white !important;
+            background-color: #E3DAC9 !important; /* Light cream */
+            color: #4A4A4A !important;
         }
 
         /* Change title font and color */
         .title {
-            font-size: 3rem !important;
-            color: #4CAF50;
+            font-size: 2.8rem !important;
+            color: #5A7D7C !important; /* Muted green */
             font-weight: bold;
             text-align: center;
         }
 
-        /* Change background color */
-        body {
-            background-color: #F5F5F5 !important;
-        }
-
         /* Style buttons */
         .stButton>button {
-            background-color: #4CAF50 !important;
+            background-color: #A69C89 !important; /* Soft brown */
             color: white !important;
             font-size: 16px !important;
-            border-radius: 10px !important;
+            border-radius: 8px !important;
             padding: 10px !important;
+            width: 100%;
         }
 
         .stButton>button:hover {
-            background-color: #388E3C !important;
+            background-color: #8B7E74 !important; /* Slightly darker brown */
         }
 
         /* Style headers */
         h1, h2, h3 {
-            color: #2E3B4E !important;
+            color: #5A7D7C !important; /* Muted green */
         }
 
-        /* Center text */
-        .center-text {
-            text-align: center !important;
+        /* Contact Form Styling */
+        .contact-box {
+            background: #E3DAC9;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            width: 60%;
+            margin: auto;
         }
+
+        .contact-box h3 {
+            color: #5A7D7C;
+            text-align: center;
+        }
+
     </style>
 """, unsafe_allow_html=True)
 
@@ -59,7 +71,7 @@ selection = st.sidebar.radio("Go to", pages)
 if selection == "Home":
     st.markdown('<h1 class="title">Welcome to My Portfolio!</h1>', unsafe_allow_html=True)
     st.markdown("""
-    <div class="center-text">
+    <div style="text-align: center;">
         <p>Hello, I'm <b>Lianne de la Salle</b>, a passionate Software Developer with experience in building innovative and scalable software applications.</p>
         <p>I'm excited to share my journey with you. Explore the sections below to know more about me, my skills, and my projects.</p>
     </div>
@@ -130,11 +142,23 @@ elif selection == "Projects":
 # Contact Page
 elif selection == "Contact":
     st.title("Contact Me")
-    st.markdown("""
-    Feel free to reach out to me for collaborations, opportunities, or any questions you may have!
     
-    **Email**: [lianne@example.com] (Update with your email)  
-    **LinkedIn**: [Lianne de la Salle](https://www.linkedin.com/in/lianne-de-la-salle-72b51999?originalSubdomain=ca)  
-    **GitHub**: [GitHub Profile](https://github.com/yourusername)
-    """)
+    st.markdown("""
+    <div class="contact-box">
+        <h3>Let's Connect!</h3>
+    </div>
+    """, unsafe_allow_html=True)
+    
+    with st.form(key='contact_form'):
+        name = st.text_input("Your Name")
+        email = st.text_input("Your Email")
+        message = st.text_area("Your Message")
+        
+        submit_button = st.form_submit_button(label="Send Message")
+
+    if submit_button:
+        if name and email and message:
+            st.success(f"Thank you, {name}! Your message has been received. I'll get back to you soon.")
+        else:
+            st.error("Please fill out all fields before submitting.")
 
