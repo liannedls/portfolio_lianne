@@ -126,13 +126,12 @@ elif selection == "Education & Courses":
     
     st.header("🎓 Education")
     st.markdown("""
-    - **Bachelor's in Computer Science** - [Your University Name], [Graduation Year]
-    - [Add any other degrees or diplomas here]
+    - ** Bachelor of Applied Science Electrical Engineering** - University of Ottawa 2017 
     """)
 
     st.header("📚 Courses & Certifications")
     st.markdown("""
-    - **Data Talent Machine Learning Program - M2M Tech - 2025
+    - **Data Talent Machine Learning Program - M2M Tech - 2025**
     - **Royal Military College Malware Analysis Short Course (MASC)** - 2024
     - **Machine Learning Course** - University of Waterloo - 2024
     """)
