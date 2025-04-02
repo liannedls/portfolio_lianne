@@ -86,7 +86,7 @@ if selection == "Home":
     st.markdown('<h1 class="title">Hi 👋 </h1>', unsafe_allow_html=True)
     st.markdown("""
     <div style="text-align: center;">
-        <p>Hello, I'm <b>Liannee</b>, a software developer with experience in building modern scalable software applications.</p>
+        <p>Hello, I'm <b>Lianne</b>, a software developer with experience in building modern scalable software applications.</p>
         <p>Feel free to explore around to know more about me, my skills, and my projects.</p>
     </div>
     """, unsafe_allow_html=True)
@@ -95,30 +95,30 @@ if selection == "Home":
 elif selection == "About Me":
     st.title("About Me")
     st.markdown("""
-    Hi! I'm **Lianne de la Salle**, a Software Developer with a background in Computer Science. 
+    **In a nutshull**
     I specialize in full-stack development and am passionate about building web applications that are both functional and user-friendly.    
-**Experience**:  
-- **Programmer Analyst, Application Development** at [CRTC - Canadian Radio-television and Telecommunications Commission] (February 2021 – June 2021, March 2022 – Present)  
-  - Full-stack software developer for the CRTC’s internal Django web application, the **Spam Reporting Center**.  
-  - Meet with clients to define requirements and implement new features.  
-  - Troubleshoot and address production issues, debug source code, complete code reviews, and write automated tests.  
-  - Integrated machine learning and computer vision libraries to enhance the system.  
-  - Collaborate with external partners to resolve system-impacting issues.  
-
-- **Programmer Analyst, Application Development** at [ESDC - Employment and Social Development Canada] (July 2021 – February 2022)  
-  - Developed, maintained, and supported an **ArcGIS application** for ESDC intelligence clients.  
-  - Assisted with cloud migration and process automation.  
-
-- **Software and Hardware Engineer** at [CCX Technologies] (October 2018 – November 2019)  
-  - Worked in a **multifaceted role** involving software design and testing, schematic and PCB design, and product verification.  
-  - Contributed to the development of a **cybersecurity and networking web application** by:  
-    - Developing frontend features.  
-    - Creating and resolving bug reports.  
-    - Building a features database.  
-    - Developing functional test cases.  
-    - Automating processes.  
-
-    """)
+    **Experience**:  
+    - **Programmer Analyst, Application Development** at [CRTC - Canadian Radio-television and Telecommunications Commission] (February 2021 – June 2021, March 2022 – Present)  
+      - Full-stack software developer for the CRTC’s internal Django web application, the **Spam Reporting Center**.  
+      - Meet with clients to define requirements and implement new features.  
+      - Troubleshoot and address production issues, debug source code, complete code reviews, and write automated tests.  
+      - Integrated machine learning and computer vision libraries to enhance the system.  
+      - Collaborate with external partners to resolve system-impacting issues.  
+    
+    - **Programmer Analyst, Application Development** at [ESDC - Employment and Social Development Canada] (July 2021 – February 2022)  
+      - Developed, maintained, and supported an **ArcGIS application** for ESDC intelligence clients.  
+      - Assisted with cloud migration and process automation.  
+    
+    - **Software and Hardware Engineer** at [CCX Technologies] (October 2018 – November 2019)  
+      - Worked in a **multifaceted role** involving software design and testing, schematic and PCB design, and product verification.  
+      - Contributed to the development of a **cybersecurity and networking web application** by:  
+        - Developing frontend features.  
+        - Creating and resolving bug reports.  
+        - Building a features database.  
+        - Developing functional test cases.  
+        - Automating processes.  
+    
+        """)
 
 # Education & Courses Page
 elif selection == "Education & Courses":
@@ -132,10 +132,9 @@ elif selection == "Education & Courses":
 
     st.header("📚 Courses & Certifications")
     st.markdown("""
-    - **Royal Military College Malware Analysis Short Course (MASC)**
-    - **Machine Learning Basics** - [Platform Name]
-    - **Cloud Computing with AWS** - [Platform Name]
-    - [Add any other relevant certifications]
+    - **Data Talent Machine Learning Program - M2M Tech - 2025
+    - **Royal Military College Malware Analysis Short Course (MASC)** - 2024
+    - **Machine Learning Course** - University of Waterloo - 2024
     """)
 
 # Skills Page
@@ -143,21 +142,34 @@ elif selection == "Skills":
     st.title("Skills")
     st.markdown("""
     I have experience with a variety of programming languages and technologies. Here are some of the skills I bring to the table:
+
+    **Programming Languages**:  
+    - Python, JavaScript, HTML, CSS, Matlab, Bash  
     
-    **Languages**:
-    - Python, JavaScript, Java, C++
+    **Web Development & Frameworks**:  
+    - Django, Tomcat  
     
-    **Web Development**:
-    - HTML, CSS, JavaScript (React, Vue.js)
+    **Databases**:  
+    - PostgreSQL, MySQL, Redis  
     
-    **Databases**:
-    - MySQL, PostgreSQL, MongoDB
+    **DevOps & Cloud**:  
+    - Docker, Azure, Virtual Machines  
     
-    **Tools & Frameworks**:
-    - Docker, Kubernetes, AWS, Git, Flask, Django, Node.js
+    **Version Control & Project Management**:  
+    - Git, Kanban, Jira  
     
-    **Other**:
-    - Agile Methodology, REST APIs, Unit Testing
+    **Messaging & Task Queues**:  
+    - RabbitMQ, Celery  
+    
+    **Operating Systems**:  
+    - Linux (Ubuntu, RedHat, Arch, Kali)  
+    
+    **Computer Vision & Data Processing**:  
+    - OpenCV  
+    
+    **Networking & Cybersecurity**:  
+    - Wireshark, Prometheus, Networking, Cybersecurity  
+
     """)
 
 # Projects Page
