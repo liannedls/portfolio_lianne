@@ -3,32 +3,33 @@ import streamlit as st
 # Set page configuration
 st.set_page_config(page_title="Lianne de la Salle - Software Developer", page_icon=":computer:", layout="wide")
 
-# Inject Custom CSS for the Soft Pastel Color Palette
+# Inject Custom CSS for Dark Mode with Soft Pastel Colors
 st.markdown("""
     <style>
-        /* Set background color */
+        /* Dark background */
         body {
-            background-color: #BDDDE4 !important; /* Soft muted pink */
+            background-color: #1E293B !important; /* Deep blue-gray */
+            color: #E0E8F0 !important; /* Light pastel for contrast */
         }
 
-        /* Customize the sidebar */
+        /* Sidebar */
         [data-testid="stSidebar"] {
-            background-color: #9EC6F3 !important; /* Light purple */
-            color: #333 !important;
+            background-color: #334155 !important; /* Muted navy */
+            color: #D1D5DB !important;
         }
 
         /* Title Styling */
         .title {
             font-size: 2.8rem !important;
-            color: #9FB3DF !important; /* Soft blue */
+            color: #9FB3DF !important; /* Soft pastel blue */
             font-weight: bold;
             text-align: center;
         }
 
-        /* Style buttons */
+        /* Buttons */
         .stButton>button {
-            background-color: #FFF1D5 !important; /* Soft beige */
-            color: #4A4A4A !important;
+            background-color: #FFF1D5 !important; /* Light beige */
+            color: #333 !important;
             font-size: 16px !important;
             border-radius: 8px !important;
             padding: 10px !important;
@@ -36,26 +37,26 @@ st.markdown("""
         }
 
         .stButton>button:hover {
-            background-color: #F4E3C1 !important; /* Slightly darker beige */
+            background-color: #F4E3C1 !important; /* Slightly warmer beige */
         }
 
-        /* Style headers */
+        /* Headers */
         h1, h2, h3 {
             color: #9FB3DF !important; /* Soft blue */
         }
 
-        /* Contact Form Styling */
+        /* Contact Form */
         .contact-box {
-            background: #FFF1D5;
+            background: #334155;
             padding: 20px;
             border-radius: 12px;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.1);
             width: 60%;
             margin: auto;
         }
 
         .contact-box h3 {
-            color: #9FB3DF;
+            color: #FFF1D5;
             text-align: center;
         }
 
@@ -159,4 +160,3 @@ elif selection == "Contact":
             st.success(f"Thank you, {name}! Your message has been received. I'll get back to you soon.")
         else:
             st.error("Please fill out all fields before submitting.")
-
