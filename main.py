@@ -78,7 +78,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Sidebar for navigation
-pages = ["Home", "About Me", "Education & Courses", "Skills", "Projects", "Contact"]
+pages = ["Home", "About Me", "Work Experience", "Education & Courses", "Skills", "Projects", "Contact"]
 selection = st.sidebar.radio("", pages)
 
 # Home Page
@@ -96,7 +96,12 @@ elif selection == "About Me":
     st.title("About Me")
     st.markdown("""
     **In a nutshull**
-    I specialize in full-stack development and am passionate about building web applications that are both functional and user-friendly.    
+    I specialize in full-stack development and am passionate about building web applications that are both functional and user-friendly. 
+     """, unsafe_allow_html=True)
+
+elif selection == "Work Experience":
+    st.title("Work Experience")
+    st.markdown("""    
     **Experience**:  
     - **Programmer Analyst, Application Development** at [CRTC - Canadian Radio-television and Telecommunications Commission] (February 2021 – June 2021, March 2022 – Present)  
       - Full-stack software developer for the CRTC’s internal Django web application, the **Spam Reporting Center**.  
